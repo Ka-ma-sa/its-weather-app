@@ -3,33 +3,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="src/style.css" />
 		<title>Its Weather App</title>
 	</head>
 	<body>
-		<header>
-			<form>
-				<input type="search" placeholder="Enter a city" required />
-				<input type="submit" value="Search" />
-			</form>
-		</header>
-		<main>
-			<div>☀️</div>
-			<div>30°C</div>
-			<div>
-				<h1>Hong Kong</h1>
-				<p>Thursday 13:55, few clouds</p>
-				<p>Humidity: 76%, Wind: 2.68km/h</p>
-			</div>
-		</main>
-		<footer>
-			The project was coded by
-			<a href="https://github.com/Ka-ma-sa" target="_blank">Sarah Cheung</a>,
-			coded hosted on
-			<a href="https://github.com/Ka-ma-sa/its-weather-app" target="_blank"
-				>GitHub</a
-			>
-			and website hosted on
-			<a href="https://tin1hei3.netlify.app/" target="_blank">Netlify</a>
-		</footer>
+		<div class="weather-app-container">
+			<header>
+				<form>
+					<input type="search" placeholder="Enter a city" required />
+					<input type="submit" value="Search" />
+				</form>
+			</header>
+			<main>
+				<div>☀️</div>
+				<div>30°C</div>
+				<div>
+					<h1>Hong Kong</h1>
+					<p>Thursday 13:55, few clouds</p>
+					<p>Humidity: 76%, Wind: 2.68km/h</p>
+				</div>
+			</main>
+			<footer>
+				The project was coded by
+				<a href="https://github.com/Ka-ma-sa" target="_blank">Sarah Cheung</a>,
+				coded hosted on
+				<a href="https://github.com/Ka-ma-sa/its-weather-app" target="_blank"
+					>GitHub</a
+				>
+				and website hosted on
+				<a href="https://tin1hei3.netlify.app/" target="_blank">Netlify</a>
+			</footer>
+		</div>
 	</body>
 </html>
