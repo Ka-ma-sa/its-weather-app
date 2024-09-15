@@ -8,7 +8,7 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet" />
-			  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 		<link rel="stylesheet" href="src/style.css" />
 		<title>Its Weather App</title>
 	</head>
@@ -26,9 +26,12 @@
 				</form>
 			</header>
 			<main>
-				<div class="city-name" id="city-name">Hong Kong</div>
+				<div class="city-name" id="city-name"></div>
 				<div class="weather-icon">☀️</div>
-				<div class="temp">30°C</div>
+				<div class="current-temp-comtainer">
+					<div class="temp" id="current-temp"></div>
+					<div class="temp">°C</div>
+				</div>
 				<div class="weather-details">
 					<p>Thursday 13:55, few clouds</p>
 					<p>Humidity: 76%, Wind: 2.68km/h</p>
