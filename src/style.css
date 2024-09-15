@@ -38,10 +38,13 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
-div.weather-icon {
-	font-size: 200px;
-	margin-top: 10px;
-	text-align: center;
+.weather-icon-container {
+	display: flex;
+	justify-content: center;
+}
+
+.weather-icon {
+	width: 100px;
 }
 
 div.temp {
