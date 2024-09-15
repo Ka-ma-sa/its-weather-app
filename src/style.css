@@ -1,16 +1,20 @@
 body {
-	background-color: rgba(231, 234, 246, 0.8);
 	font-family: "Montserrat", sans-serif;
+	background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/143/579/original/cloud.jpg?1726419791");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	height: 100vh;
 }
 
 .weather-app-container {
-	background-color: transparent;
-	border: solid 1px rgba(162, 168, 211, 0.3);
+	background-color: rgba(255,255,255,0.4)
+	border: solid 1px rgba(142, 172, 205, 0.3);
 	border-radius: 20px;
 	max-width: 600px;
 	margin: 30px auto;
 	padding: 50px;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 5px rgb(142, 172, 205);
 }
 
 .city-search-form {
@@ -21,7 +25,7 @@ body {
 .form-input {
 	width: 70%;
 	border: none;
-	background-color: rgba(231, 234, 246, 0.8);
+	background-color: rgba(210, 224, 251, 0.8);
 	border-radius: 5px;
 	padding: 10px 15px;
 	font-family: "Montserrat", sans-serif;
@@ -29,13 +33,19 @@ body {
 
 .form-submit-buttom {
 	width: 25%;
-	background-color: rgba(0, 87, 137, 0.8);
+	background-color: rgb(142, 172, 205);
 	border: none;
 	border-radius: 5px;
 	padding: 10px 15px;
 	color: #ffffff;
 	font-weight: 500;
 	font-family: "Montserrat", sans-serif;
+	transition: 150ms ease-in-out;
+}
+
+.form-submit-buttom:hover {
+	background-color: rgba(210, 224, 251, 0.8);
+	color: rgb(142, 172, 205);
 }
 
 .weather-icon-container {
@@ -45,31 +55,49 @@ body {
 
 .weather-icon {
 	width: 100px;
+	margin-top: 20px;
 }
 
-div.temp {
+.temp {
 	font-size: 50px;
 	font-weight: 900;
 }
 
 .current-temp-comtainer {
+	color:rgb(22, 29, 111);
 	display: flex;
 	justify-content: center;
+	margin-top: 20px;
 }
 
-div.city-name {
-	margin-top: 20px;
-	font-size: 30px;
+.city-name {
+	color:rgb(22, 29, 111);
+	font-size: 20px;
 	font-weight: 500;
+	margin-top: 50px;
 	text-align: center;
 }
 
-div.weather-details {
+.weather-details {
+	color:rgb(142, 172, 205);
+	display: flex;
+	justify-content: space-between;
 	font-size: 12px;
 	font-weight: 600;
+	margin-top: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(22, 29, 111);
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 footer {
-	margin-top: 20px;
-	color: grey;
+	color: rgb(142, 172, 205);
+	margin-top: 50px;
+	text-align: center;
 }
