@@ -14,17 +14,18 @@
 	<body>
 		<div class="weather-app-container">
 			<header>
-				<form class="city-searach-form">
+				<form class="city-searach-form" id="city-search-form">
 					<input
 						type="search"
 						class="form-input"
+						id="form-input"
 						placeholder="Enter a city"
 						required />
 					<input type="submit" value="Search" class="form-submit-buttom" />
 				</form>
 			</header>
 			<main>
-				<div class="city-name">Hong Kong</div>
+				<div class="city-name" id="city-name">Hong Kong</div>
 				<div class="weather-icon">☀️</div>
 				<div class="temp">30°C</div>
 				<div class="weather-details">
@@ -43,5 +44,6 @@
 				<a href="https://tin1hei3.netlify.app/" target="_blank">Netlify</a>
 			</footer>
 		</div>
+		<script src="src/index.js"></script>
 	</body>
 </html>
