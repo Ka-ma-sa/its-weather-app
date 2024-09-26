@@ -40,7 +40,7 @@ function formateDate(date) {
 	if (hours < 10) {
 		hours = `0${hours}`;
 	}
-
+	changeBackgroundImage(hours);
 	return `${day}, ${hours}:${mins}`;
 }
 
@@ -94,6 +94,18 @@ function showForecast(response) {
 	let forecast = document.querySelector("#weather-forecast");
 	forecast.innerHTML = forecastHtml;
 }
+
+function changeBackgroundImage(hours) {
+	let body = document.querySelector("body");
+	if (hours >= 18 && hours < 6) {
+		body.style.backgroundImage =
+			"url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/286/original/Night_Sky_Circles.jpg?1727386975)";
+	} else {
+		body.style.backgroundImage =
+			"url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/143/579/original/cloud.jpg?1726419791)";
+	}
+}
+
 let searchForm = document.querySelector("#city-search-form");
 searchForm.addEventListener("submit", updateCity);
 
