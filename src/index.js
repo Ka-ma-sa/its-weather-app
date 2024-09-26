@@ -40,7 +40,10 @@ function formateDate(date) {
 	if (hours < 10) {
 		hours = `0${hours}`;
 	}
+
 	changeBackgroundImage(hours);
+	changeTheme(hours);
+
 	return `${day}, ${hours}:${mins}`;
 }
 
@@ -97,12 +100,25 @@ function showForecast(response) {
 
 function changeBackgroundImage(hours) {
 	let body = document.querySelector("body");
-	if (hours >= 18 && hours < 6) {
+	if (hours >= 18 || hours < 6) {
 		body.style.backgroundImage =
 			"url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/286/original/Night_Sky_Circles.jpg?1727386975)";
 	} else {
 		body.style.backgroundImage =
 			"url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/143/579/original/cloud.jpg?1726419791)";
+	}
+}
+
+function changeTheme(hours) {
+	let weatherContianer = document.querySelector("#weather-app-container");
+	let cityName = document.querySelector("#city-name");
+	let temp = document.querySelector("#current-temp");
+	let unit = document.querySelector("#current-unit");
+	if (hours >= 18 || hours < 6) {
+		cityName.classList.add("dark-theme");
+		weatherContianer.classList.add("dark-theme");
+		temp.classList.add("dark-theme");
+		unit.classList.add("dark-theme");
 	}
 }
 

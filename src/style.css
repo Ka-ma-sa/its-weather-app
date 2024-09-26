@@ -60,14 +60,18 @@ body {
 
 .weather-icon {
 	padding-top: 20px;
-	width: 120px;
-	height: 120px;
+	width: 150px;
+	height: 150px;
 }
 
 .temp {
 	font-size: 50px;
 	font-weight: 900;
 	text-align: left;
+}
+
+.temp.dark-theme {
+	color: rgb(255, 255, 255);
 }
 
 .current-temp-comtainer {
@@ -159,4 +163,18 @@ footer {
 	font-size: 10px;
 	margin-top: 50px;
 	text-align: center;
+}
+
+.city-name.dark-theme {
+	color: rgb(255, 255, 255);
+}
+
+.weather-app-container.dark-theme {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	max-width: 500px;
+	margin: 30px auto;
+	padding: 50px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
