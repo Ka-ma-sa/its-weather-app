@@ -48,45 +48,57 @@ body {
 	color: rgb(142, 172, 205);
 }
 
+.location-details-container {
+	display: flex;
+	justify-content:space-between;
+	margin-top: 50px;
+}
+
 .weather-icon-container {
 	display: flex;
 	justify-content: center;
 }
 
 .weather-icon {
-	width: 100px;
-	margin-top: 20px;
+	padding-top: 20px;
+	width:120px;
+	height:120px;
+	
 }
 
 .temp {
 	font-size: 50px;
 	font-weight: 900;
+	text-align: left;
 }
 
 .current-temp-comtainer {
 	color:rgb(22, 29, 111);
 	display: flex;
-	justify-content: center;
-	margin-top: 20px;
+	justify-content: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .city-name {
 	color:rgb(22, 29, 111);
 	font-size: 20px;
 	font-weight: 500;
-	margin-top: 50px;
-	text-align: center;
+	text-align: left;
 }
 
 .weather-details {
 	color:rgb(142, 172, 205);
-	display: flex;
-	justify-content: space-between;
 	font-size: 12px;
 	font-weight: 600;
-	margin-top: 20px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	
 }
 
+.weather-condition{
+	text-transform: capitalize;
+}
 a {
 	text-decoration: none;
 	color: rgb(22, 29, 111);

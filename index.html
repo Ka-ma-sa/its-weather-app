@@ -26,21 +26,23 @@
 				</form>
 			</header>
 			<main>
-				<div class="city-name" id="city-name"></div>
-				<div id="weather-icon" class="weather-icon-container"></div>
-				<div class="current-temp-comtainer">
-					<div class="temp" id="current-temp"></div>
-					<div class="temp">°C</div>
-				</div>
-				<div class="weather-details">
-					<p>
-						<span id="date-time">Thursday 13:55</span>,
-						<span id="weather-condition"></span>
-					</p>
-					<p>
-						Humidity: <span id="humidity"></span>%, Wind:
-						<span id="wind-speed"></span>km/h
-					</p>
+				<div class="location-details-container">
+					<div class="location-details">
+						<div class="weather-details" id="date-time"></div>
+						<div class="city-name" id="city-name"></div>
+						<div class="current-temp-comtainer">
+							<div class="temp" id="current-temp"></div>
+							<div class="temp">°C</div>
+						</div>
+						<span
+							class="weather-details weather-condition"
+							id="weather-condition"></span>
+						<div class="weather-details">
+							Humidity: <span id="humidity"></span>%, Wind:
+							<span id="wind-speed"></span>km/h
+						</div>
+					</div>
+					<div id="weather-icon" class="weather-icon-container"></div>
 				</div>
 			</main>
 			<footer>
